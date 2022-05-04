@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-style: bold;
+}
+
+.content {
+    margin: 80px;
+    height: 250px;
+    width: 250px;
+    border: 2px none;
+    background-color: #ff000080;
+    box-shadow: 5px 10px 8px #888888;
+    float: left;
+}

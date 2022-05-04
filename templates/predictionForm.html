@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}Price Prediction{% endblock %}
+
+{% block content %}
+{% from "includes/_formHelper.html" import render_field %}
+
+<h1 class="display-4">Create User</h1>
+
+<form method="POST" action="">
+  <div class="form-group">
+    {{ render_field(form.Mileage, class="form-control") }}
+  </div>
+  <div class="form-group">
+    {{ render_field(form.Transmission, class="form-control") }}
+  </div>
+  <div class="form-group">
+    {{ render_field(form.Vehicle_Make, class="form-control") }}
+  </div>
+  <div class="form-group">
+    {{ render_field(form.Vehicle_Model, class="form-check", style="list-style-type:none") }}
+  </div>
+  <div class="form-group">
+    {{ render_field(form.Open_Market_Value, class="form-check", style="list-style-type:none") }}
+  </div>
+  <div class="form-group">
+    {{ render_field(form.First_Registration_Date, class="form-check", style="list-style-type:none") }}
+  </div>
+  <div class="form-group">
+    {{ render_field(form.Actual_ARF_Paid, class="form-check", style="list-style-type:none") }}
+  </div>
+  <div class="form-group">
+    {{ render_field(form.COE_Category, class="form-check", style="list-style-type:none") }}
+  </div>
+  <div class="form-group">
+    {{ render_field(form.COE_Period, class="form-check", style="list-style-type:none") }}
+  </div>
+  <div class="form-group">
+    {{ render_field(form.Propellant, class="form-check", style="list-style-type:none") }}
+  </div>
+  <div class="form-group">
+    {{ render_field(form.Engine_Capacity, class="form-check", style="list-style-type:none") }}
+  </div>
+  <div class="form-group">
+    {{ render_field(form.Selected_Price, class="form-check", style="list-style-type:none") }}
+  </div>
+
+  <input type="submit" value="Submit" class="btn btn-primary"/>
+</form>
+{% endblock %}
+
